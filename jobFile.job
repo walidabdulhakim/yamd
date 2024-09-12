@@ -1,0 +1,17 @@
+#!/bin/bash -x
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=40
+#SBATCH --time=12:00:00
+#SBATCH -J YAMD
+#SBATCH --mem=4gb
+#SBATCH --export=ALL
+#SBATCH --partition=multiple
+
+module load compiler/gnu/11.2
+module load mpi/openmpi/4.1
+
+echo "Running on ${SLURM_JOB_NUM_NODES} nodes with ${SLURM_JOB_CPUS_PER_NODE} cores each."
+echo "Each node has ${SLURM_MEM_PER_NODE} of memory allocated to this job."
+
+cd builddir
+time mpirun ./milestones/09/09

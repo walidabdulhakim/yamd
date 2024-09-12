@@ -1,5 +1,5 @@
 executable(
-	'milestone01',
+	'01',
 	'main.cpp',
 	include_directories : [lib_incdirs],
 	link_with : [lib],
