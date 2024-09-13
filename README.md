@@ -35,4 +35,8 @@ mpirun -n 2 ./milestones/09/09
 
 ```
 
+<<<<<<< Updated upstream
 Huge credit to https://github.com/arulsingh, https://github.com/JulianKarrer and https://github.com/Dwaipayan-R-C as they inspired some of my codes 
+=======
+Huge credit to https://github.com/arulsingh, https://github.com/JulianKarrer and https://github.com/Dwaipayan-R-C as they inspired some of my codes 
+>>>>>>> Stashed changes
